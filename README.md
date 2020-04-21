@@ -67,6 +67,14 @@ Start the React app (inside ./app folder)
 $ npm start
 ```
 
+## Build & Deploy
+
+Build and run the docker compose:
+
+```bash
+$ docker-compose up -d
+```
+
 ## Example of usage
 
 #### Deploy a new firmware file
