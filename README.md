@@ -10,9 +10,9 @@
     </a>
 </p>
 
-# OTA firmware update handler
+# OTA Server - Easy firmware update 
 
-##### API (Express server) and React web app to managing and automatically send the last version firmware files to IoT embedded devices.
+##### Express server and React web App to managing and automatically deploy the last version firmware to IoT embedded devices.
 
 ### About
 
