@@ -1,4 +1,4 @@
-const updateService = require('../services/update-service');
+const updateService = require('../services/UpdateService');
 
 const moment = require('moment');
 

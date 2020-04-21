@@ -1,5 +1,5 @@
 
-class FirmareVersion {
+class VersionControlService {
 
     constructor(version) {
         const part = version.split("_");
@@ -30,4 +30,4 @@ class FirmareVersion {
 
 }
 
-module.exports = FirmareVersion;
+module.exports = VersionControlService;

@@ -12,5 +12,4 @@ router.post('/deploy', multer(upload).single('firmware'), deployCtrl.newFirmware
 router.get('/images/:project/:board', updateCtrl.listFirmwares);
 router.get('/update/:project/:board', updateCtrl.updateDevice);
 
-
 module.exports = router;

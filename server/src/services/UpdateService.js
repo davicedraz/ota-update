@@ -3,7 +3,7 @@ const path = require('path');
 
 const basePath = path.resolve(__dirname, '..', '..', '..', 'bin');
 
-const boardService = require('./board-service');
+const boardService = require('./BoardService');
 const FWVersion = require('../firmware-version');
 
 const code = require('../config/constants');
