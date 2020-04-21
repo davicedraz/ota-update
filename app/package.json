@@ -1,5 +1,5 @@
 {
-  "name": "ota-update-frontend",
+  "name": "ota-update-app",
   "version": "0.1.0",
   "dependencies": {
     "axios": "^0.19.0",
@@ -13,6 +13,7 @@
     "react-scripts": "3.0.1",
     "styled-components": "^4.3.2"
   },
+  "author": "Davi Cedraz",
   "scripts": {
     "start": "PORT=8002 react-scripts start",
     "build": "PORT=8002 react-scripts build",

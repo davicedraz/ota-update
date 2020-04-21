@@ -1,13 +1,41 @@
-# ota-update-server
+<p align="">
+    <a alt="Node">
+        <img src="https://img.shields.io/badge/Node.js-v12.14.1-green.svg" />
+    </a>
+    <a alt="React">
+        <img src="https://img.shields.io/badge/React-v16.8.6-9cf.svg" />
+    </a>     
+    <a alt="Docker">
+        <img src="https://img.shields.io/badge/Docker-v19.03.8-blue.svg" />
+    </a>
+</p>
 
-Firmware version update server for IoT devices
+# OTA firmware update handler
+
+##### API (Express server) and React web app to managing and automatically send the last version firmware files to IoT embedded devices.
+
+### About
+
+This project it is being developed to be a very simple solution to the problem of managing firmware files in IoT projects. In the context of IoT, the Over-The-Air update, called OTA, makes it easier to update devices, as it allows sending firmware and software updates to devices remotely.
+
+There is a simple set of rules that dictate how version numbers are assigned and incremented on build files. For example: consider the version format X.Y.Z. Correction of faults (bug fixes) that do not affect the system, increases the space X, additions / changes compatible with previous versions of the software or firmware increases the Y, and incompatible changes with previous versions increases the Z.
+
+Based on that, at the moment, this is what the system proposes to do:
+
+- [ ] Login and Signup
+- [x] CRUD (Create, Read, Update and Delete) of a firmware file with the name of the project, version and name of the compatible board;
+- [x] Present the list of all firmwares files (.bin) by project and board
+- [x] Makes available for donwload all firmware files (without TLS, yet)
+- [ ] Makes available for donwload in a safe way with TLS
+- [x] The name of the firmware is always saved with the format: project_name_v0_0_1.bin
+- [x] The system does not accept uploading a file in a format other than .bin
+- [x] The file version reflects the Major, Minor and Correction (Patch) version
 
 ## Setup
 
-``` bash
-# change the urls into .env file
-Create the file .env and set the following properties as you need:
+First of all, create the file .env and set the following properties as you need:
 
+``` bash
 # ENV is the enviroment variable to project context, should be 'development' or 'production'
 ENV=development
 
@@ -30,9 +58,9 @@ Serve the application
 npm start
 ```
 
-## Usage
+## Example of usage
 
-### Deploy
+#### Deploy a new firmware file
 
 - [POST]
 - Route: http://localhost:8001/deploy
@@ -50,7 +78,7 @@ npm start
     firmware: file.bin
     ```
 
-### Update\*
+#### Update via OTA
 
 - [GET]
 - Route: http://localhost:8001/update/project_name/board_type
@@ -59,5 +87,3 @@ npm start
     - x-ESP8266-version: 0_0_1
     - x-ESP8266-mode: sketch
     - x-ESP8266-chip-size: 1000000
-
-\* This should be implemented on firmware and sent by device 
