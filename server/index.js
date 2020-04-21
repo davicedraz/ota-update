@@ -1,8 +1,7 @@
-const app = require('../server');
-
-const server = require('http').Server(app.server);
-
 require('dotenv').config();
+
+const app = require('../server/src');
+const server = require('http').Server(app.server);
 
 const context = {
     express: process.env.SERVER_PORT || 8001,

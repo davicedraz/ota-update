@@ -17,7 +17,7 @@ class App extends Component {
 	};
 
 	async componentDidMount() {
-		const response = await api.get('/images/hb/esp_01m');
+		const response = await api.get('/images/project/esp_01m');
 
 		this.setState({
 			uploadedFiles: response.data.map(file => ({
@@ -37,7 +37,7 @@ class App extends Component {
 			progress: 0,
 			uploaded: false,
 			error: false,
-			project: 'hb',
+			project: 'project',
 			board: 'esp_01m',
 			version: '6_1_4',
 			url: null,

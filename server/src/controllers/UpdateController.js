@@ -21,8 +21,6 @@ class UpdateController {
             }).catch(error => res.status(error.status).json(error.message));
     }
 
-    
-
 }
 
 module.exports = UpdateController;

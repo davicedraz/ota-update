@@ -1,4 +1,4 @@
-const deployService = require('../services/deploy-service');
+const deployService = require('../services/DeployService');
 
 class DeployController {
 

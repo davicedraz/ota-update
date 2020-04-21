@@ -4,7 +4,7 @@ const path = require('path');
 const basePath = path.resolve(__dirname, '..', '..', '..', 'bin');
 
 const boardService = require('./BoardService');
-const FWVersion = require('../firmware-version');
+const FWVersion = require('./VersionControlService');
 
 const code = require('../config/constants');
 

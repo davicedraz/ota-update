@@ -14,6 +14,8 @@
 
 ##### API (Express server) and React web app to managing and automatically send the last version firmware files to IoT embedded devices.
 
+![](./docs/images/demo.gif)
+
 ### About
 
 This project it is being developed to be a very simple solution to the problem of managing firmware files in IoT projects. In the context of IoT, the Over-The-Air update, called OTA, makes it easier to update devices, as it allows sending firmware and software updates to devices remotely.
@@ -33,7 +35,7 @@ Based on that, at the moment, this is what the system proposes to do:
 
 ## Setup
 
-First of all, create the file .env and set the following properties as you need:
+On the server directory, create the file .env and set the following properties as you need:
 
 ``` bash
 # ENV is the enviroment variable to project context, should be 'development' or 'production'
@@ -46,16 +48,21 @@ SERVER_PORT=8001
 MAX_SIZE=1
 ```
 
-## Install
+## Development
 
-First, install dependencies
+Inside the server and app directories, install dependencies:
 ``` bash
-npm install
+$ npm install
 ```
 
-Serve the application
+Start the express server (inside ./server folder)
 ``` bash 
-npm start
+$ npm start
+```
+
+Start the React app (inside ./app folder)
+``` bash 
+$ npm start
 ```
 
 ## Example of usage

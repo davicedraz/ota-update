@@ -1,8 +1,8 @@
 const express = require('express');
 const multer = require('multer')
 
-const updateCtrl = require('./controllers/update-controller');
-const deployCtrl = require('./controllers/deploy-controller');
+const updateCtrl = require('./controllers/UpdateController');
+const deployCtrl = require('./controllers/DeployController');
 
 const upload = require('./config/multer');
 

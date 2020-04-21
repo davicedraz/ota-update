@@ -1,4 +1,4 @@
-const boards = require('../config/http-boards');
+const boards = require('../config/boards');
 
 class BoardService {
 
