@@ -14,8 +14,6 @@
 
 ##### API (Express server) and React web app to managing and automatically send the last version firmware files to IoT embedded devices.
 
-![](./docs/images/demo.gif)
-
 ### About
 
 This project it is being developed to be a very simple solution to the problem of managing firmware files in IoT projects. In the context of IoT, the Over-The-Air update, called OTA, makes it easier to update devices, as it allows sending firmware and software updates to devices remotely.
@@ -32,6 +30,10 @@ Based on that, at the moment, this is what the system proposes to do:
 - [x] The name of the firmware is always saved with the format: project_name_v0_0_1.bin
 - [x] The system does not accept uploading a file in a format other than .bin
 - [x] The file version reflects the Major, Minor and Correction (Patch) version
+
+<p align="center">
+<img src="./docs/images/demo.gif" alt="demo"/>
+</p>
 
 ## Setup
 
