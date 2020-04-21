@@ -16,9 +16,9 @@
 
 ### About
 
-This project it is being developed to be a very simple solution to the problem of managing firmware files in IoT projects. In the context of IoT, the Over-The-Air update, called OTA, makes it easier to update devices, as it allows sending firmware and software updates to devices remotely.
+This project it is being developed to be a very simple solution to the problem of managing firmware files in IoT projects. In the context of IoT, the Over-The-Air update, called OTA, makes it easier to update devices, as it allows sending firmware and software updates to devices remotely. Click [here](https://gist.github.com/davicedraz/b40131306a3ea6670712defef6f0e3d1) to see my gist showing how to enable OTA update on one of those devices.
 
-There is a simple set of rules that dictate how version numbers are assigned and incremented on build files. For example: consider the version format X.Y.Z. Correction of faults (bug fixes) that do not affect the system, increases the space X, additions / changes compatible with previous versions of the software or firmware increases the Y, and incompatible changes with previous versions increases the Z.
+Therefore, there is a simple set of rules that dictate how version numbers are assigned and incremented on build files. For example: consider the version format X.Y.Z. Correction of faults (bug fixes) that do not affect the system, increases the space X, additions / changes compatible with previous versions of the software or firmware increases the Y, and incompatible changes with previous versions increases the Z.
 
 Based on that, at the moment, this is what the system proposes to do:
 
